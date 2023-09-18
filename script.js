@@ -69,3 +69,13 @@ docs.forEach((doc) => {
 
   $("#cards").append(html_temp);
 });
+
+// 미세먼지 정보 넣기
+let url = "http://spartacodingclub.shop/sparta_api/seoulair";
+
+fetch(url)
+  .then((res) => res.json())
+  .then((data) => {
+    let getData = data["RealtimeCityAir"]["row"][0];
+    $(".mise").text(getData["IDEX_NM"]);
+  });
