@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <title>추억앨범 만들기</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- 앨범 배너 -->
+    <div class="banner">
+      <h1>나만의 추억앨범</h1>
+      <p>현재 서울의 미세먼지: <span class="mise"></span></p>
+      <button id="savebtn">추억 저장하기</button>
+    </div>
+
+    <!-- 포스팅 폼 -->
+    <div class="postingbox">
+      <div class="form-floating mb-3">
+        <input
+          id="image"
+          type="email"
+          class="form-control"
+          id="floatingInput"
+          placeholder="앨범 이미지" />
+        <label for="floatingInput">앨범 이미지</label>
+      </div>
+
+      <div class="form-floating mb-3">
+        <input
+          id="title"
+          type="email"
+          class="form-control"
+          id="floatingInput"
+          placeholder="앨범 제목" />
+        <label for="floatingInput">앨범 제목</label>
+      </div>
+
+      <div class="form-floating mb-3">
+        <input
+          id="date"
+          type="email"
+          class="form-control"
+          id="floatingInput"
+          placeholder="날짜" />
+        <label for="floatingInput">날짜</label>
+      </div>
+
+      <div class="form-floating mb-3">
+        <input
+          id="content"
+          type="email"
+          class="form-control"
+          id="floatingInput"
+          placeholder="앨범 내용" />
+        <label for="floatingInput">앨범 내용</label>
+      </div>
+      <div class="btnbox">
+        <button
+          id="postingbtn"
+          type="button"
+          class="btn btn-dark"
+          id="add-album">
+          기록하기
+        </button>
+      </div>
+    </div>
+
+    <!-- 앨범 카드 -->
+    <div class="row row-cols-1 row-cols-md-4 g-4" id="cards"></div>
+    <script src="script.js" type="module"></script>
+  </body>
+</html>

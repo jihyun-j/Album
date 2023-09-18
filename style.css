@@ -1,0 +1,42 @@
+/* TOP BANNER */
+.banner {
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background-image: url("https://images.unsplash.com/photo-1511992243105-2992b3fd0410?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80");
+  background-position: center;
+  background-size: cover;
+}
+
+.banner > button {
+  background-color: transparent;
+  width: 150px;
+  padding: 15px 10px;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 3px;
+}
+
+/* FORM */
+.postingbox {
+  width: 500px;
+  margin: 50px auto;
+  border: 1px solid #0dcaf0;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+.postingbox .btnbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* CARDS */
+#cards {
+  width: 1200px;
+  margin: 10px auto;
+}
